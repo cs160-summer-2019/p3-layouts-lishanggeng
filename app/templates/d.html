@@ -13,8 +13,42 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+    body {
+      height: 100%;
+      padding: 0px;
+      background-color : purple;
+    }
+    .container{
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      background-color: purple;
+      max-width: 1366px;
+      max-height: 1024px;
+      
+      
+    }
+    .container > div {
+      margin: 20px;
+      width: 220px;
+      height: 220px;
+      padding: 20px;
+      background-color: orange;
+    }
+  </style>
 	<body>
 		<!-- Your layout here -->
-
+    <div class = "container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+     
+    </div>
 	</body>
 </html>

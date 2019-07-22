@@ -13,8 +13,42 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+    body{
+      height: 100%;
+      padding:0px;
+      background-color : purple;
+    }
+    .box{
+      display:flex;
+      flex-direction:column;
+      justify-content: space-evenly;
+      
+      height:100%;
+      width:100%;
+    }
+    .box > div{
+      height: 25%;
+      width:100%;
+      background-color : orange;
+    }
+    .center {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+    
+  </style>
 	<body>
 		<!-- Your layout here -->
+    <div class="box center">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 
 	</body>
 </html>

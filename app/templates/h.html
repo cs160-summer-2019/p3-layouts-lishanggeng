@@ -13,8 +13,45 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+    body{
+      height: 100%;
+      padding:0px;
+      background-color : purple;
+    }
+    .box{
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content : space-evenly;
+    }
+    .box > div{
+      margin:20px;
+      width:220px;
+      height:220px;
+      padding:20px;
+      background-color : orange;
+    }
+  </style>
 	<body>
 		<!-- Your layout here -->
-
+    
+<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 	</body>
 </html>
